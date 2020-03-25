@@ -28,19 +28,19 @@ def main():
 
 	current_color = red
 	
+	
 	def draw(position, color):
 		pygame.draw.circle(main_screen, (color), position, 20)
 
 	def clear_screen():
 		main_screen.fill((powderblue))
 
+	
 	run = True
 	while run:
 		
 		pygame.time.delay(100)
 		
-		
-
 		for event in pygame.event.get():
 			if event.type ==pygame.QUIT:
 				run = False
@@ -76,12 +76,7 @@ def main():
 					if (pos[0] >= 0 and pos[0] <= 40) and (pos[1] >= 2 and pos[1] <= 39):
 						current_color = red
 
-
-
-
-
 	pygame.quit()
-
 
 if __name__ == "__main__":
 	main()
